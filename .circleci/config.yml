@@ -10,7 +10,7 @@ jobs:
           name: Build
           command: |
             apt update && apt upgrade -y && apt install sudo -y
-            sudo apt install make -y
+            sudo apt install make git -y
             make -j$(nproc --all)
             git config --global user.name "Harsh Barsaiyan"
             git config --global user.email "hbarsaiyan@gmail.com" 
