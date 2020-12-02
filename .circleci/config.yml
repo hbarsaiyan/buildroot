@@ -4,6 +4,7 @@ jobs:
   build:
     docker:
       - image: ubuntu:bionic
+    resource_class: large
     steps:
       - checkout
       - run:
